@@ -3,52 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Yijia\\source\\repos\\Lab5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|c:\\users\\yijia\\source\\repos\\lab5\\lab5\\views\\fans\\editsubscriptions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|solutionrelative:lab5\\views\\fans\\editsubscriptions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|c:\\users\\yijia\\source\\repos\\lab5\\lab5\\views\\sportclubs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|solutionrelative:lab5\\views\\sportclubs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|c:\\users\\yijia\\source\\repos\\lab5\\lab5\\views\\fans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|C:\\Users\\Yijia\\source\\repos\\Lab5\\lab5\\views\\fans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|solutionrelative:lab5\\views\\fans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|c:\\users\\yijia\\source\\repos\\lab5\\lab5\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|solutionrelative:lab5\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|C:\\Users\\Yijia\\source\\repos\\Lab5\\lab5\\controllers\\fanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|solutionrelative:lab5\\controllers\\fanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|c:\\users\\yijia\\source\\repos\\lab5\\lab5\\models\\viewmodels\\sportclubsubscriptionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|solutionrelative:lab5\\models\\viewmodels\\sportclubsubscriptionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|c:\\users\\yijia\\source\\repos\\lab5\\lab5\\models\\viewmodels\\fansubscriptionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|C:\\Users\\Yijia\\source\\repos\\Lab5\\lab5\\models\\viewmodels\\fansubscriptionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|solutionrelative:lab5\\models\\viewmodels\\fansubscriptionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|c:\\users\\yijia\\source\\repos\\lab5\\lab5\\models\\viewmodels\\sportclubviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|solutionrelative:lab5\\models\\viewmodels\\sportclubviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|C:\\Users\\Yijia\\source\\repos\\Lab5\\lab5\\views\\fans\\editsubscriptions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|solutionrelative:lab5\\views\\fans\\editsubscriptions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|c:\\users\\yijia\\source\\repos\\lab5\\lab5\\views\\fans\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|C:\\Users\\Yijia\\source\\repos\\Lab5\\lab5\\models\\viewmodels\\sportclubsubscriptionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|solutionrelative:lab5\\models\\viewmodels\\sportclubsubscriptionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|C:\\Users\\Yijia\\source\\repos\\Lab5\\lab5\\views\\fans\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|solutionrelative:lab5\\views\\fans\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|c:\\users\\yijia\\source\\repos\\lab5\\lab5\\views\\fans\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|C:\\Users\\Yijia\\source\\repos\\Lab5\\lab5\\views\\fans\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|solutionrelative:lab5\\views\\fans\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|c:\\users\\yijia\\source\\repos\\lab5\\lab5\\views\\fans\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|C:\\Users\\Yijia\\source\\repos\\Lab5\\lab5\\views\\fans\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|solutionrelative:lab5\\views\\fans\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|C:\\Users\\Yijia\\source\\repos\\Lab5\\lab5\\models\\viewmodels\\newsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|solutionrelative:lab5\\models\\viewmodels\\newsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|C:\\Users\\Yijia\\source\\repos\\Lab5\\lab5\\models\\fan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|solutionrelative:lab5\\models\\fan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|C:\\Users\\Yijia\\source\\repos\\Lab5\\lab5\\views\\sportclubs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|solutionrelative:lab5\\views\\sportclubs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,11 +50,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Views\\SportClubs\\Index.cshtml",
+              "RelativeDocumentMoniker": "Lab5\\Views\\SportClubs\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Views\\SportClubs\\Index.cshtml",
+              "RelativeToolTip": "Lab5\\Views\\SportClubs\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-01T22:25:01.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Lab5\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Lab5\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-01T22:23:26.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "SportClubSubscriptionViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Models\\ViewModels\\SportClubSubscriptionViewModel.cs",
               "RelativeDocumentMoniker": "Lab5\\Models\\ViewModels\\SportClubSubscriptionViewModel.cs",
@@ -70,8 +92,7 @@
               "RelativeToolTip": "Lab5\\Models\\ViewModels\\SportClubSubscriptionViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAIAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T21:35:47.219Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T21:35:47.219Z"
             },
             {
               "$type": "Document",
@@ -83,12 +104,11 @@
               "RelativeToolTip": "Lab5\\Models\\ViewModels\\FanSubscriptionViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T21:35:39.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T21:35:39.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Views\\Fans\\Delete.cshtml",
               "RelativeDocumentMoniker": "Lab5\\Views\\Fans\\Delete.cshtml",
@@ -96,12 +116,11 @@
               "RelativeToolTip": "Lab5\\Views\\Fans\\Delete.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-01T21:19:46.455Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T21:19:46.455Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Views\\Fans\\Details.cshtml",
               "RelativeDocumentMoniker": "Lab5\\Views\\Fans\\Details.cshtml",
@@ -109,29 +128,11 @@
               "RelativeToolTip": "Lab5\\Views\\Fans\\Details.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-01T21:19:35.859Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T21:19:35.859Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SportClubViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Models\\ViewModels\\SportClubViewModel.cs",
-              "RelativeDocumentMoniker": "Lab5\\Models\\ViewModels\\SportClubViewModel.cs",
-              "ToolTip": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Models\\ViewModels\\SportClubViewModel.cs",
-              "RelativeToolTip": "Lab5\\Models\\ViewModels\\SportClubViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T21:10:07.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Views\\Fans\\Edit.cshtml",
               "RelativeDocumentMoniker": "Lab5\\Views\\Fans\\Edit.cshtml",
@@ -139,21 +140,19 @@
               "RelativeToolTip": "Lab5\\Views\\Fans\\Edit.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-01T16:08:33.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T16:08:33.683Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "EditSubscriptions.cshtml",
               "DocumentMoniker": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Views\\Fans\\EditSubscriptions.cshtml",
               "RelativeDocumentMoniker": "Lab5\\Views\\Fans\\EditSubscriptions.cshtml",
               "ToolTip": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Views\\Fans\\EditSubscriptions.cshtml",
               "RelativeToolTip": "Lab5\\Views\\Fans\\EditSubscriptions.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAIwBMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-01T16:08:30.611Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T16:08:30.611Z"
             },
             {
               "$type": "Document",
@@ -163,61 +162,22 @@
               "RelativeDocumentMoniker": "Lab5\\Views\\Fans\\Index.cshtml",
               "ToolTip": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Views\\Fans\\Index.cshtml",
               "RelativeToolTip": "Lab5\\Views\\Fans\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABTAAAA",
+              "ViewState": "AQIAADEAAACAmpmZmZkewDsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-31T15:40:56.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Views\\SportClubs\\Index.cshtml",
-              "RelativeDocumentMoniker": "Lab5\\Views\\SportClubs\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Views\\SportClubs\\Index.cshtml",
-              "RelativeToolTip": "Lab5\\Views\\SportClubs\\Index.cshtml",
-              "ViewState": "AQIAACQAAAAANjMzMzMbwAAAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-02T18:59:46.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FansController.cs",
               "DocumentMoniker": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Controllers\\FansController.cs",
               "RelativeDocumentMoniker": "Lab5\\Controllers\\FansController.cs",
               "ToolTip": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Controllers\\FansController.cs",
               "RelativeToolTip": "Lab5\\Controllers\\FansController.cs",
-              "ViewState": "AQIAAJgAAAAAb2ZmZuYlwKUAAAAqAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAIAkwBkAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-02T18:43:07.477Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Fan.cs",
-              "DocumentMoniker": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Models\\Fan.cs",
-              "RelativeDocumentMoniker": "Lab5\\Models\\Fan.cs",
-              "ToolTip": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Models\\Fan.cs",
-              "RelativeToolTip": "Lab5\\Models\\Fan.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T13:55:13.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "NewsViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Models\\ViewModels\\NewsViewModel.cs",
-              "RelativeDocumentMoniker": "Lab5\\Models\\ViewModels\\NewsViewModel.cs",
-              "ToolTip": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Models\\ViewModels\\NewsViewModel.cs",
-              "RelativeToolTip": "Lab5\\Models\\ViewModels\\NewsViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:35:24.706Z",
               "EditorCaption": ""
             }
           ]
