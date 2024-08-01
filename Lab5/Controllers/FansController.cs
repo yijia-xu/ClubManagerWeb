@@ -138,6 +138,45 @@ namespace Lab5.Controllers
             return View(fan);
         }
 
+        public async Task<IActionResult> EditSubscriptions(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var fan = await _context.Fans
+                        .Include(f => f.Subscriptions)
+                        .ThenInclude(s => s.SportClubs) // Assuming SportClub is a single reference
+                        .FirstOrDefaultAsync(m => m.Id == id);
+
+            if (fan == null)
+            {
+                return NotFound();
+            }
+
+            var sportClubs = await _context.SportClubs.ToListAsync();
+            var selectedClubIds = fan.Subscriptions.Select(s => s.SportClubId).ToList();
+            var otherClubs = sportClubs.Where(sc => !selectedClubIds.Contains(sc.Id)).ToList();
+
+            // Map fan's subscriptions to SportClubSubscriptionViewModel
+            var subscriptionViewModels = fan.Subscriptions.Select(s => new SportClubSubscriptionViewModel
+            {
+                SportClubId = s.SportClubId,
+                Title = s.SportClubs.Title
+                // Add any additional properties needed
+            }).ToList();
+
+            var viewModel = new FanSubscriptionViewModel
+            {
+                Fan = fan,
+                Subscriptions = subscriptionViewModels
+            };
+
+            return View(viewModel);
+        }
+
+
         // GET: Fans/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {

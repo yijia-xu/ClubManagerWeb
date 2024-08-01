@@ -1,0 +1,44 @@
+﻿@model Lab5.Models.ViewModels.FanSubscriptionViewModel
+
+@{
+    ViewData["Title"] = "EditSubscriptions";
+}
+
+<h1>Edit Subscriptions</h1>
+
+<h4>Fan</h4>
+<div class="row">
+    <div class="col-md-4">
+        <table class="table">
+            <tr>
+                <td><b>@Html.DisplayNameFor(model => model.Fan.FullName)</b></td>
+                <td>@Model.Fan.FullName</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <table class="table">
+            <tr>
+                @foreach (var subscription in Model.Subscriptions)
+                {
+                    @subscription.Title <br />
+                }
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+
