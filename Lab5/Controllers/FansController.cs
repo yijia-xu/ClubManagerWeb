@@ -147,8 +147,8 @@ namespace Lab5.Controllers
 
             var fan = await _context.Fans
                         .Include(f => f.Subscriptions)
-                        .ThenInclude(s => s.SportClubs) // Assuming SportClub is a single reference
-                        .FirstOrDefaultAsync(m => m.Id == id);
+                        .ThenInclude(s => s.SportClubs)
+                        .FirstOrDefaultAsync(f => f.Id == id);
 
             if (fan == null)
             {
@@ -157,23 +157,30 @@ namespace Lab5.Controllers
 
             var sportClubs = await _context.SportClubs.ToListAsync();
             var selectedClubIds = fan.Subscriptions.Select(s => s.SportClubId).ToList();
-            var otherClubs = sportClubs.Where(sc => !selectedClubIds.Contains(sc.Id)).ToList();
 
-            // Map fan's subscriptions to SportClubSubscriptionViewModel
-            var subscriptionViewModels = fan.Subscriptions.Select(s => new SportClubSubscriptionViewModel
+            var subscribedViewModels = fan.Subscriptions.Select(s => new SportClubSubscriptionViewModel
             {
                 SportClubId = s.SportClubId,
-                Title = s.SportClubs.Title
-                // Add any additional properties needed
+                Title = s.SportClubs.Title,
+                IsMember = true
             }).ToList();
 
-            var viewModel = new FanSubscriptionViewModel
+            var notSubscribedViewModels = sportClubs
+                .Where(s => !selectedClubIds.Contains(s.Id))
+                .Select(s => new SportClubSubscriptionViewModel
+                {
+                    SportClubId = s.Id,
+                    Title = s.Title,
+                    IsMember = false
+                }).ToList();
+
+            var allFanViewModel = new FanSubscriptionViewModel
             {
                 Fan = fan,
-                Subscriptions = subscriptionViewModels
+                Subscriptions = notSubscribedViewModels.Concat(subscribedViewModels).ToList()
             };
 
-            return View(viewModel);
+            return View(allFanViewModel);
         }
 
 

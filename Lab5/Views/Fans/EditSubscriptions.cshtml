@@ -21,12 +21,22 @@
 <div class="row">
     <div class="col-md-4">
         <table class="table">
-            <tr>
+            <tbody>
                 @foreach (var subscription in Model.Subscriptions)
                 {
-                    @subscription.Title <br />
+                <tr>
+                    <td>@subscription.Title </td>
+                    @if (subscription.IsMember)
+                    {
+                        <td>Unregister</td>
+                    }
+                    else
+                    {
+                        <td>Register</td>
+                    }
+                </tr>
                 }
-            </tr>
+            </tbody>
         </table>
     </div>
 </div>
