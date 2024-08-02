@@ -26,14 +26,24 @@
                 {
                 <tr>
                     <td>@subscription.Title </td>
-                    @if (subscription.IsMember)
-                    {
-                        <td>Unregister</td>
-                    }
-                    else
-                    {
-                        <td>Register</td>
-                    }
+                        <td>
+                            @if (subscription.IsMember)
+                            {
+                                <form asp-action="RemoveSubscriptions" method="post">
+                                    <input type="hidden" name="fanId" value="@Model.Fan.Id" />
+                                    <input type="hidden" name="sportClubId" value="@subscription.SportClubId" />
+                                    <button type="submit" class="btn btn-danger">Unregister</button>
+                                </form>
+                            }
+                            else
+                            {
+                                <form asp-action="AddSubscriptions" method="post">
+                                    <input type="hidden" name="fanId" value="@Model.Fan.Id" />
+                                    <input type="hidden" name="sportClubId" value="@subscription.SportClubId" />
+                                    <button type="submit" class="btn btn-success">Register</button>
+                                </form>
+                            }
+                        </td>
                 </tr>
                 }
             </tbody>

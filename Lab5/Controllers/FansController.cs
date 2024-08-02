@@ -177,10 +177,36 @@ namespace Lab5.Controllers
             var allFanViewModel = new FanSubscriptionViewModel
             {
                 Fan = fan,
-                Subscriptions = notSubscribedViewModels.Concat(subscribedViewModels).ToList()
-            };
+                Subscriptions = subscribedViewModels.OrderBy(s => s.Title)
+                                  .Concat(notSubscribedViewModels.OrderBy(s => s.Title))
+                                  .ToList()
+        };
 
             return View(allFanViewModel);
+        }
+
+        public async Task<IActionResult> AddSubscriptions(int fanId, string sportClubId)
+        {
+            var subscription = new Subscription
+            {
+                FanId = fanId,
+                SportClubId = sportClubId
+            };
+            _context.Subscriptions.Add(subscription);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(EditSubscriptions), new {id = fanId});
+        }
+
+        public async Task<IActionResult> RemoveSubscriptions(int fanId, string sportClubId)
+        {
+            var subscription = await _context.Subscriptions
+                .FirstOrDefaultAsync(s => s.FanId == fanId && s.SportClubId == sportClubId);
+            if (subscription != null)
+            {
+                _context.Subscriptions.Remove(subscription);
+                await _context.SaveChangesAsync();
+            }
+            return RedirectToAction(nameof(EditSubscriptions), new { id = fanId });
         }
 
 
