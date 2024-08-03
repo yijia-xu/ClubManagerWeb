@@ -23,7 +23,7 @@ namespace Lab5.Controllers
         // GET: SportClubs
         public async Task<IActionResult> Index(string id)
         {
-            var viewModel = new NewsViewModel
+            var viewModel = new SportClubViewModel
             {
                 SportClubs = await _context.SportClubs.ToListAsync(),
                 Fans = new List<Fan>()

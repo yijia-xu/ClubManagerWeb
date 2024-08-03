@@ -12,12 +12,14 @@ namespace Lab5.Data
         public DbSet<Fan> Fans { get; set; }
         public DbSet<SportClub> SportClubs { get; set; }
         public DbSet<Subscription> Subscriptions { get; set; }
+        public DbSet<News> News { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Fan>().ToTable("Fan");
             modelBuilder.Entity<SportClub>().ToTable("SportsClub");
             modelBuilder.Entity<Subscription>().ToTable("Subscription");
+            modelBuilder.Entity<News>().ToTable("News");
 
             modelBuilder.Entity<Subscription>()
                 .HasKey(s => new { s.FanId, s.SportClubId });
@@ -32,6 +34,11 @@ namespace Lab5.Data
                 .WithMany(sc => sc.Subscriptions)
                 .HasForeignKey(s => s.SportClubId);
 
+            modelBuilder.Entity<News>()
+                .HasOne(n => n.SportClub)
+                .WithMany(sc => sc.News)
+                .HasForeignKey(n => n.SportClubId);
         }
+
     }
 }

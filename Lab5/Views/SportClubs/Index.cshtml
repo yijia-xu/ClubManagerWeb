@@ -1,4 +1,4 @@
-﻿@model Lab5.Models.ViewModels.NewsViewModel
+﻿@model Lab5.Models.ViewModels.SportClubViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -33,6 +33,7 @@
             </td>
             <td>
                 <a asp-action="Index" asp-route-id="@item.Id">Select</a> |
+                <a asp-controller="News" asp-action="Index" asp-route-id="@item.Id">News</a> |
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>

@@ -23,7 +23,7 @@ namespace Lab5.Controllers
         // GET: Fans
         public async Task<IActionResult> Index(int? id)
         {
-            var viewModel = new NewsViewModel
+            var viewModel = new SportClubViewModel
             {
                 Fans = await _context.Fans.ToListAsync(),
                 SportClubs = new List<SportClub>()
@@ -180,10 +180,11 @@ namespace Lab5.Controllers
                 Subscriptions = subscribedViewModels.OrderBy(s => s.Title)
                                   .Concat(notSubscribedViewModels.OrderBy(s => s.Title))
                                   .ToList()
-        };
+            };
 
             return View(allFanViewModel);
         }
+
 
         public async Task<IActionResult> AddSubscriptions(int fanId, string sportClubId)
         {
