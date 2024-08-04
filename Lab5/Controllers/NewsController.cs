@@ -101,17 +101,16 @@ namespace Lab5.Controllers
                 try
                 {
                     news.SportClubId = scid;
-                    string containerName = "images";
 
                     BlobContainerClient containerClient;
                     try
                     {
-                        containerClient = await _blobServiceClient.CreateBlobContainerAsync(containerName);
+                        containerClient = await _blobServiceClient.CreateBlobContainerAsync(_containerName);
                         containerClient.SetAccessPolicy(Azure.Storage.Blobs.Models.PublicAccessType.BlobContainer);
                     }
                     catch (RequestFailedException)
                     {
-                        containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
+                        containerClient = _blobServiceClient.GetBlobContainerClient(_containerName);
                     }
 
                     if (image != null)
@@ -197,6 +196,9 @@ namespace Lab5.Controllers
                 return NotFound();
             }
 
+            ViewData["SportClubId"] = id;
+            ViewData["SportClubName"] = news.SportClub.Title;
+
             return View(news);
         }
 
@@ -208,11 +210,15 @@ namespace Lab5.Controllers
             var news = await _context.News.FindAsync(id);
             if (news != null)
             {
-                _context.News.Remove(news);
-            }
 
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+                BlobContainerClient containerClient = _blobServiceClient.GetBlobContainerClient(_containerName);
+                BlobClient blobClient = containerClient.GetBlobClient(news.FileName);
+                await blobClient.DeleteIfExistsAsync();
+
+                _context.News.Remove(news);
+                await _context.SaveChangesAsync();
+            }
+            return RedirectToAction("Index", new { id = news.SportClubId });
         }
 
         private bool NewsExists(int id)
