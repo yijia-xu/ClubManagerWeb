@@ -1,53 +1,49 @@
 ﻿@model IEnumerable<Lab5.Models.News>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "NewsIndex";
+    var sportsClubName = ViewData["SportsClubName"] as string;
+    var sportsClubId = ViewData["SportsClubId"] as int?;
 }
 
-<h1>Index</h1>
+<h1>Show news for SportClubs @sportsClubName</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" asp-route-id="@sportsClubId">Upload New</a>
 </p>
+
+<div>
+    <a asp-controller="SportClubs" asp-action="Index">Back to List</a>
+</div>
+
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.FileName)
+                @Html.DisplayNameFor(model => model.FirstOrDefault().FileName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Question)
+                Image
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Url)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SportClub)
-            </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.FileName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Question)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Url)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SportClub.Id)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.NewsId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.NewsId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.NewsId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FileName)
+                </td>
+                <td>
+                    <div>
+                        <img src="@item.Url" alt="Image" style="max-width: 800px;">
+                    </div>
+                </td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@item.NewsId">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+
