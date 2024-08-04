@@ -17,7 +17,7 @@ namespace Lab5.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.6")
+                .HasAnnotation("ProductVersion", "8.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -60,9 +60,6 @@ namespace Lab5.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
-
-                    b.Property<int>("Question")
-                        .HasColumnType("int");
 
                     b.Property<string>("SportClubId")
                         .HasColumnType("nvarchar(450)");

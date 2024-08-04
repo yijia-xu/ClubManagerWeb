@@ -7,16 +7,21 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Lab5.Data;
 using Lab5.Models;
+using Azure.Storage.Blobs;
+using Azure;
 
 namespace Lab5.Controllers
 {
     public class NewsController : Controller
     {
         private readonly SportsDbContext _context;
+        private readonly string _containerName = "images";
+        private readonly BlobServiceClient _blobServiceClient;
 
-        public NewsController(SportsDbContext context)
+        public NewsController(SportsDbContext context, BlobServiceClient blobServiceClient)
         {
             _context = context;
+            _blobServiceClient = blobServiceClient;
         }
 
         // GET: News
@@ -24,7 +29,7 @@ namespace Lab5.Controllers
         {
             if (string.IsNullOrEmpty(id))
             {
-                return NotFound(); 
+                return NotFound();
             }
 
             var sportClub = await _context.SportClubs.FindAsync(id);
@@ -89,42 +94,62 @@ namespace Lab5.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("NewsId,FileName,Question,Url,SportClubId")] News news)
+        public async Task<IActionResult> Create([Bind("NewsId,FileName,Url,SportClubId")] News news, string scid, IFormFile image)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(news);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                try
+                {
+                    news.SportClubId = scid;
+                    string containerName = "images";
+
+                    BlobContainerClient containerClient;
+                    try
+                    {
+                        containerClient = await _blobServiceClient.CreateBlobContainerAsync(containerName);
+                        containerClient.SetAccessPolicy(Azure.Storage.Blobs.Models.PublicAccessType.BlobContainer);
+                    }
+                    catch (RequestFailedException)
+                    {
+                        containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
+                    }
+
+                    if (image != null)
+                    {
+                        string uniqueFileName = $"{Guid.NewGuid()}_{Path.GetFileName(image.FileName)}";
+                        BlobClient blobClient = containerClient.GetBlobClient(uniqueFileName);
+
+                        using (var stream = image.OpenReadStream())
+                        {
+                            await blobClient.UploadAsync(stream, true);
+                        }
+
+                        news.FileName = uniqueFileName;
+                        news.Url = blobClient.Uri.ToString();
+                    }
+
+                    _context.News.Add(news);
+                    await _context.SaveChangesAsync();
+
+                    return RedirectToAction("Create", new { id = news.SportClubId });
+                }
+                catch (Exception ex)
+                {
+                    ViewData["ErrorMessage"] = $"An error occurred while uploading the file: {ex.Message}";
+                }
             }
-            ViewData["SportClubId"] = new SelectList(_context.SportClubs, "Id", "Id", news.SportClubId);
+
+            ViewData["SportClubId"] = new SelectList(_context.SportClubs, "Id", "Title", news.SportClubId);
             return View(news);
         }
 
-
-        // GET: News/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var news = await _context.News.FindAsync(id);
-            if (news == null)
-            {
-                return NotFound();
-            }
-            ViewData["SportClubId"] = new SelectList(_context.SportClubs, "Id", "Id", news.SportClubId);
-            return View(news);
-        }
 
         // POST: News/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("NewsId,FileName,Question,Url,SportClubId")] News news)
+        public async Task<IActionResult> Edit(int id, [Bind("NewsId,FileName,Url,SportClubId")] News news)
         {
             if (id != news.NewsId)
             {

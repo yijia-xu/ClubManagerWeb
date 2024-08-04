@@ -46,7 +46,6 @@ namespace Lab5.Migrations
                     NewsId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FileName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    Question = table.Column<int>(type: "int", nullable: false),
                     Url = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     SportClubId = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
