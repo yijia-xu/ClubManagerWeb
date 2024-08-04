@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Yijia\\source\\repos\\Lab5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|c:\\users\\yijia\\source\\repos\\lab5\\lab5\\views\\news\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|solutionrelative:lab5\\views\\news\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|C:\\Users\\Yijia\\source\\repos\\Lab5\\lab5\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|solutionrelative:lab5\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|c:\\users\\yijia\\source\\repos\\lab5\\lab5\\views\\news\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|solutionrelative:lab5\\views\\news\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7A4B2179-97B8-448A-B71A-54C54271D869}|Lab5\\Lab5.csproj|C:\\Users\\Yijia\\source\\repos\\Lab5\\lab5\\models\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,13 +98,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "NewsController.cs",
               "DocumentMoniker": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Controllers\\NewsController.cs",
               "RelativeDocumentMoniker": "Lab5\\Controllers\\NewsController.cs",
               "ToolTip": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Controllers\\NewsController.cs",
               "RelativeToolTip": "Lab5\\Controllers\\NewsController.cs",
-              "ViewState": "AQIAAHQAAAAAAAAAAAAAAIUAAAAzAAAA",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAqwH8AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-04T14:24:03.783Z",
               "EditorCaption": ""
@@ -119,8 +119,7 @@
               "RelativeToolTip": "Lab5\\Models\\News.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T01:07:06.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-04T01:07:06.367Z"
             },
             {
               "$type": "Document",
@@ -132,8 +131,7 @@
               "RelativeToolTip": "Lab5\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-04T13:52:52.976Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-04T13:52:52.976Z"
             },
             {
               "$type": "Document",
@@ -169,8 +167,7 @@
               "RelativeToolTip": "Lab5\\Views\\News\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-03T21:45:53.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-03T21:45:53.165Z"
             },
             {
               "$type": "Document",
@@ -234,13 +231,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Views\\News\\Create.cshtml",
               "RelativeDocumentMoniker": "Lab5\\Views\\News\\Create.cshtml",
               "ToolTip": "C:\\Users\\Yijia\\source\\repos\\Lab5\\Lab5\\Views\\News\\Create.cshtml",
               "RelativeToolTip": "Lab5\\Views\\News\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAB4AAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-03T21:39:55.419Z",
               "EditorCaption": ""
@@ -255,8 +252,7 @@
               "RelativeToolTip": "Lab5\\Models\\Subscription.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T21:37:48.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-03T21:37:48.848Z"
             },
             {
               "$type": "Document",
@@ -280,8 +276,7 @@
               "RelativeToolTip": "Lab5\\Views\\SportClubs\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-01T22:25:01.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T22:25:01.86Z"
             },
             {
               "$type": "Document",

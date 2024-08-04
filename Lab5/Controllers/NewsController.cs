@@ -116,15 +116,16 @@ namespace Lab5.Controllers
 
                     if (image != null)
                     {
-                        string uniqueFileName = $"{Guid.NewGuid()}_{Path.GetFileName(image.FileName)}";
-                        BlobClient blobClient = containerClient.GetBlobClient(uniqueFileName);
+                        string randomFileName = Path.GetRandomFileName();
+                        string blobFileName = randomFileName;
+                        BlobClient blobClient = containerClient.GetBlobClient(blobFileName);
 
                         using (var stream = image.OpenReadStream())
                         {
                             await blobClient.UploadAsync(stream, true);
                         }
 
-                        news.FileName = uniqueFileName;
+                        news.FileName = blobFileName;
                         news.Url = blobClient.Uri.ToString();
                     }
 
