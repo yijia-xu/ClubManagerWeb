@@ -27,8 +27,8 @@ namespace Lab5.Controllers
                 return NotFound(); 
             }
 
-            var sportsClub = await _context.SportClubs.FindAsync(id);
-            if (sportsClub == null)
+            var sportClub = await _context.SportClubs.FindAsync(id);
+            if (sportClub == null)
             {
                 return NotFound();
             }
@@ -37,8 +37,8 @@ namespace Lab5.Controllers
                 .Where(n => n.SportClubId == id)
                 .ToListAsync();
 
-            ViewData["SportsClubName"] = sportsClub.Title;
-            ViewData["SportsClubId"] = id;
+            ViewData["SportClubName"] = sportClub.Title;
+            ViewData["SportClubId"] = id;
 
             return View(newsItems);
         }
@@ -64,11 +64,25 @@ namespace Lab5.Controllers
         }
 
         // GET: News/Create
-        public IActionResult Create()
+        public IActionResult Create(string id)
         {
-            ViewData["SportClubId"] = new SelectList(_context.SportClubs, "Id", "Id");
+            if (string.IsNullOrEmpty(id))
+            {
+                return BadRequest();
+            }
+
+            var sportClub = _context.SportClubs.Find(id);
+            if (sportClub == null)
+            {
+                return NotFound();
+            }
+
+            ViewData["SportClubId"] = id;
+            ViewData["SportClubName"] = sportClub.Title;
+
             return View();
         }
+
 
         // POST: News/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -86,6 +100,7 @@ namespace Lab5.Controllers
             ViewData["SportClubId"] = new SelectList(_context.SportClubs, "Id", "Id", news.SportClubId);
             return View(news);
         }
+
 
         // GET: News/Edit/5
         public async Task<IActionResult> Edit(int? id)

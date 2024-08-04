@@ -1,15 +1,15 @@
 ﻿@model IEnumerable<Lab5.Models.News>
 
 @{
-    ViewData["Title"] = "NewsIndex";
-    var sportsClubName = ViewData["SportsClubName"] as string;
-    var sportsClubId = ViewData["SportsClubId"] as int?;
+    ViewData["Title"] = "Index";
+    var sportClubName = ViewData["SportClubName"] as string;
+    var sportClubId = ViewData["SportClubId"] as string;
 }
 
-<h1>Show news for SportClubs @sportsClubName</h1>
+<h1>Show news for SportClubs @sportClubName</h1>
 
 <p>
-    <a asp-action="Create" asp-route-id="@sportsClubId">Upload New</a>
+    <a asp-action="Create" asp-route-id="@sportClubId">Upload New</a>
 </p>
 
 <div>
