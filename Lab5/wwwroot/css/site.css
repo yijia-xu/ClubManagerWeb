@@ -1,73 +1,119 @@
-﻿﻿ /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+﻿/* Modernized Navbar Brand */
 a.navbar-brand {
     white-space: normal;
     text-align: center;
-    word-break: break-all;
+    word-break: break-word;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6f61;
+    background: linear-gradient(135deg, #ff6f61, #ffafbd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-/* Provide sufficient contrast against white background */
+/* Enhanced Link Styles for Better Accessibility */
 a {
-    color: #0366d6;
+    color: #ff6f61;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
+    a:hover, a:focus {
+        color: #ff4a4a;
+        text-decoration: underline;
+        transform: scale(1.05);
+    }
+
+/* Modernized Button Styles */
 .btn-primary {
     color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
+    background-color: #ff6f61;
+    border-color: #ff4a4a;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(255, 111, 97, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
+    .btn-primary:hover, .btn-primary:focus {
+        background-color: #ff4a4a;
+        box-shadow: 0 6px 12px rgba(255, 74, 74, 0.4);
+        transform: translateY(-2px);
+    }
+
+/* Updated Nav Pills */
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
+    background-color: #ff6f61;
+    border-color: #ff4a4a;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(255, 111, 97, 0.3);
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
+/* Global Font Size and Responsive Design */
 html {
-    font-size: 14px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
 }
 
 @media (min-width: 768px) {
     html {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
+/* Modernized Border Styles */
 .border-top {
-    border-top: 1px solid #e5e5e5;
+    border-top: 2px solid #ff6f61;
 }
 
 .border-bottom {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 2px solid #ff6f61;
 }
 
+/* Refined Box Shadow */
 .box-shadow {
-    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Updated Policy Button */
 button.accept-policy {
     font-size: 1rem;
-    line-height: inherit;
+    line-height: 1.5;
+    background-color: #ffafbd;
+    border: 1px solid #ff6f61;
+    border-radius: 4px;
+    color: #fff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
+    button.accept-policy:hover, button.accept-policy:focus {
+        background-color: #ff6f61;
+        box-shadow: 0 4px 8px rgba(255, 111, 97, 0.3);
+    }
+
+/* Sticky Footer Styles */
 html {
     position: relative;
     min-height: 100%;
+    background-color: #f8f9fa;
 }
 
 body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
+    margin-bottom: 70px;
+    background-color: #ffffff;
+    color: #333;
 }
 
+/* Modernized Footer */
 .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     white-space: nowrap;
-    line-height: 60px; /* Vertically center the text there */
+    line-height: 70px;
+    background: linear-gradient(135deg, #ff6f61, #ffafbd);
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.15);
 }
