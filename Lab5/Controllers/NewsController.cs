@@ -196,7 +196,7 @@ namespace Lab5.Controllers
                 return NotFound();
             }
 
-            ViewData["SportClubId"] = id;
+            ViewData["SportClubId"] = news.SportClubId;
             ViewData["SportClubName"] = news.SportClub.Title;
 
             return View(news);

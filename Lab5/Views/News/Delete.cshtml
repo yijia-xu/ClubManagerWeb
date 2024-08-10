@@ -26,10 +26,11 @@
             <img src="@Model.Url" alt="Image" style="max-width: 800px;">
         </dd>
     </dl>
-    
+
     <form asp-action="Delete">
         <input type="hidden" asp-for="NewsId" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <a asp-controller="News" asp-action="Index" asp-route-id="@ViewData["SportClubId"]">Back to List</a>
     </form>
+
 </div>
