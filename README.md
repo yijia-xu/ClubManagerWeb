@@ -21,7 +21,7 @@ Responsive front-end layout with Razor Pages
 
 
 ## Built With
-Framework: ASP.NET Core
+Framework: ASP.NET Core MVC
 
 Frontend: Razor Pages, HTML5, CSS3
 
@@ -36,14 +36,17 @@ Development Environment: Visual Studio 2022
 
 ## Project Structure
 ```
-Root/
-├── wwwroot/ # Static assets
-├── Pages/ # Razor Pages
-├── Models/ # Entity and View models
-├── Data/ # EF Core database context
-├── Services/ # Azure storage integration
-├── Program.cs # Application entry point
-├── appsettings.json # App configuration
-└── Lab5.csproj
+Lab5/
+├── .config/ # Configuration files
+├── Controllers/ # ASP.NET MVC controllers
+├── Data/ # EF Core database context and seed data
+├── Migrations/ # EF Core migration files
+├── Models/ # Data models and view models
+├── Properties/ # Project-specific settings and launch config
+├── Views/ # Razor Views (.cshtml files)
+├── wwwroot/css/ # Static CSS files
+├── Lab5.csproj # Project file
+├── Lab5.csproj.user # User-specific project settings
+└── Program.cs # Application entry point
 ```
 
